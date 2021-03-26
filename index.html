@@ -31,11 +31,11 @@
         </div>
         <ul class="navbar-links">
           <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Menu</a></li>
-          <li><a href="#">Expert</a></li>
-          <li><a href="#">Testimonials</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu-section">Menu</a></li>
+          <li><a href="#expert-section">Expert</a></li>
+          <li><a href="#testimonial-section">Testimonials</a></li>
+          <li><a href="#contact-section">Contact</a></li>
         </ul>
         <div class="burger">
           <div class="line1"></div>
@@ -62,7 +62,7 @@
     <!-- END HERO SECTION -->
 
     <!-- ABOUT SECTION -->
-    <section class="about">
+    <section class="about" id="about">
       <div class="about-cover" data-aos="fade-right">
         <img src="./images/img-about.jpg" alt="img-about" />
       </div>
@@ -94,7 +94,7 @@
     <!-- END ABOUT SECTION -->
 
     <!-- MENU SECTION -->
-    <section class="menu-section" data-aos="fade-in">
+    <section class="menu-section" id="menu-section" data-aos="fade-in">
       <h3>Our <span class="orange-span">M</span>enu</h3>
       <p class="sub-p">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -138,7 +138,7 @@
     <!-- END MENU SECTION -->
 
     <!-- EXPECT SECTION -->
-    <section class="expert-section" data-aos="fade-in">
+    <section class="expert-section" id="expert-section" data-aos="fade-in">
       <h3>Our Kitchen <span class="orange-span">E</span>xperts</h3>
       <p class="sub-p">Lorem ipsum dolor sit amet consectetur adipiscing.</p>
       <div class="card-container">
@@ -224,7 +224,7 @@
     <!-- END TESTIMONIALS -->
 
     <!-- CONTACT SECTION -->
-    <section class="contact-section">
+    <section class="contact-section" id="contact-section">
       <h3>Contact <span class="orange-span">U</span>s</h3>
       <p class="sub-p">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, ad.
@@ -330,7 +330,29 @@
         duration: 1500,
         once: false,
       });
+
       // BURGER MENU
+
+      const burger = document.querySelector(".burger");
+      const nav = document.querySelector(".navbar-links");
+      const navLinks = document.querySelectorAll(".navbar-links li");
+
+      burger.addEventListener("click", () => {
+        //toggles nav
+        nav.classList.toggle("nav-active");
+
+        //animates links
+        navLinks.forEach((link, index) => {
+          if (link.style.animation) {
+            link.style.animation = "";
+          } else {
+            link.style.animation = `navLinkFade 0.5s ease forwards ${
+              index / 7 + 0.5
+            }s`;
+          }
+        });
+        burger.classList.toggle("toggle");
+      });
     </script>
     <!-- END SCRIPT -->
   </body>
