@@ -6,4 +6,10 @@ The main idea was from [Online Tutorials Channel](https://www.youtube.com/watch?
 
 I took the concept, made a wholesale changes to the design and added a few extra features like animation and a carousel slider.
 
-[LIVE](#)
+![Food Landing Page](https://user-images.githubusercontent.com/26835345/112600031-5406f200-8e19-11eb-8c79-d512faff1a52.JPG)
+
+
+
+
+
+[LIVE](https://food-landing-page-website-l8zqc84cb-emansasu.vercel.app/)
