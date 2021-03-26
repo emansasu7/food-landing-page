@@ -1,2 +1,4 @@
-*.scss
-OwlCarousel2-2.3.4
+_cards.scss
+_config.scss
+_navbar.scss
+_testimonial.scss
