@@ -6,9 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Food Landing Page</title>
     <link rel="stylesheet" href="./styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="./OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+    />
   </head>
   <body class="container">
+    <!-- HERO SECTION -->
     <header>
+      <!-- NAVABR -->
       <nav class="navbar">
         <div class="logo">
           <img src="./images/logo.svg" alt="logo" />
@@ -21,18 +37,301 @@
           <li><a href="#">Testimonials</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
       </nav>
-      <div class="hero-content">
+      <!-- END NAVBAR -->
+      <!-- HERO CONTENT -->
+      <div
+        class="hero-content"
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
+      >
         <h1>Always Choose <br />Good</h1>
-        <p>
+        <p class="sub-p">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
-          nulla hic, molestiae ab consequuntur, enim ex quo, minus quos numquam
-          deserunt nihil vel deleniti necessitatibus esse. Error provident
-          doloribus obcaecati!
+          nulla hic, molestiae ab consequuntur, enim ex quo.
         </p>
         <button class="btn"><a href="#">Our Menu</a></button>
       </div>
     </header>
-    <!-- <main class="container"></main> -->
+    <!-- END HERO SECTION -->
+
+    <!-- ABOUT SECTION -->
+    <section class="about">
+      <div class="about-cover" data-aos="fade-right">
+        <img src="./images/img-about.jpg" alt="img-about" />
+      </div>
+      <div class="about-text" data-aos="fade-left">
+        <h3><span class="orange-span">A</span>bout Us</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo,
+          similique corporis! Doloribus maiores corporis, eum aut, aliquam nulla
+          soluta quaerat unde dolorem, ea obcaecati veritatis quae! Alias
+          voluptatem laboriosam eos? Quod quia ut aut. Atque, reiciendis iusto
+          aspernatur rerum quasi hic? Ea a unde minima quae, nihil sapiente
+          sequi voluptatum culpa neque non ullam eius necessitatibus doloribus
+          dolor aperiam illo! Ducimus, quidem magnam nam maiores, quia aperiam
+          officiis nostrum ea, tempore inventore aut ut totam sequi sapiente
+          ipsum! Voluptatibus ad dolorum adipisci placeat, neque consequatur sit
+          ducimus obcaecati voluptatem inventore. Illum possimus quibusdam
+          cumque rem, impedit aperiam expedita nesciunt molestias nulla laborum
+          eligendi dolorem inventore, dolor ea reprehenderit ad vel quis! Nulla
+          eius minima natus tempore sed dignissimos itaque quaerat?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi
+          tempore dolorum doloribus dolor quas autem incidunt, iusto placeat
+          sunt cumque omnis amet dicta adipisci ipsum assumenda corporis!
+          Facilis, labore ipsam!
+        </p>
+      </div>
+    </section>
+    <!-- END ABOUT SECTION -->
+
+    <!-- MENU SECTION -->
+    <section class="menu-section" data-aos="fade-in">
+      <h3>Our <span class="orange-span">M</span>enu</h3>
+      <p class="sub-p">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+
+      <!-- Create Cards -->
+      <!-- Card Container -->
+      <div class="card-container">
+        <!-- Card 1 -->
+        <div class="menu-card">
+          <img src="./images/desktop/image-meal-1.jpg" alt="image-meal-1" />
+          <p class="meal-name">Special Meal</p>
+        </div>
+        <!-- Card 2 -->
+        <div class="menu-card">
+          <img src="./images/desktop/image-meal-2.jpg" alt="image-meal-2" />
+          <p class="meal-name">Special Meal</p>
+        </div>
+        <!-- Card 3 -->
+        <div class="menu-card">
+          <img src="./images/desktop/image-meal-3.jpg" alt="image-meal-3" />
+          <p class="meal-name">Special Meal</p>
+        </div>
+        <!-- Card 4 -->
+        <div class="menu-card">
+          <img src="./images/desktop/image-meal-4.jpg" alt="image-meal-4" />
+          <p class="meal-name">Special Meal</p>
+        </div>
+        <!-- Card 5 -->
+        <div class="menu-card">
+          <img src="./images/desktop/image-meal-5.jpg" alt="image-meal-5" />
+          <p class="meal-name">Special Meal</p>
+        </div>
+        <!-- Card 6 -->
+        <div class="menu-card">
+          <img src="./images/desktop/image-meal-6.jpg" alt="image-meal-6" />
+          <p class="meal-name">Special Meal</p>
+        </div>
+      </div>
+    </section>
+    <!-- END MENU SECTION -->
+
+    <!-- EXPECT SECTION -->
+    <section class="expert-section" data-aos="fade-in">
+      <h3>Our Kitchen <span class="orange-span">E</span>xperts</h3>
+      <p class="sub-p">Lorem ipsum dolor sit amet consectetur adipiscing.</p>
+      <div class="card-container">
+        <!-- Card 1 -->
+        <div class="chef-card">
+          <img src="./images/desktop/image-chef-1.jpg" alt="image-chef-1" />
+          <p class="chef-name">Chef Name</p>
+          <small>Chef Description/Speciality</small>
+        </div>
+        <!-- Card 1 -->
+        <div class="chef-card">
+          <img src="./images/desktop/image-chef-2.jpg" alt="image-chef-2" />
+          <p class="chef-name">Chef Name</p>
+          <small>Chef Description/Speciality</small>
+        </div>
+        <!-- Card 1 -->
+        <div class="chef-card">
+          <img src="./images/desktop/image-chef-3.jpg" alt="image-chef-3" />
+          <p class="chef-name">Chef Name</p>
+          <small>Chef Description/Speciality</small>
+        </div>
+      </div>
+    </section>
+    <!-- END EXPECT SECTION -->
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonial-section" id="testimonial-section">
+      <h3><span class="orange-span">T</span>estimonials</h3>
+      <p class="sub-p">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, ad.
+      </p>
+      <div class="owl-carousel owl-theme" data-aos="zoom-in">
+        <!-- Testimonial box 1 -->
+        <div class="testimonial-box item">
+          <p>
+            " Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Corrupti, in eius eum labore quasi, rem, itaque illo ipsum earum
+            modi necessitatibus voluptas! Voluptatum pariatur architecto
+            perspiciatis totam, ullam nam nulla, amet id fuga recusandae,
+            cupiditate quia. Dicta quas vitae nisi, ex officiis voluptas quo
+            magnam corrupti, deserunt cum, maiores tempora."
+          </p>
+          <img
+            src="/images/testimonial-avater.jpg"
+            alt="client-testimonial-avater"
+          />
+          <p class="client-name">John Doe</p>
+        </div>
+        <!-- Testimonial box 1 -->
+        <div class="testimonial-box item">
+          <p>
+            " Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Corrupti, in eius eum labore quasi, rem, itaque illo ipsum earum
+            modi necessitatibus voluptas! Voluptatum pariatur architecto
+            perspiciatis totam, ullam nam nulla, amet id fuga recusandae,
+            cupiditate quia. Dicta quas vitae nisi, ex officiis voluptas quo
+            magnam corrupti, deserunt cum, maiores tempora."
+          </p>
+          <img
+            src="/images/testimonial-avater.jpg"
+            alt="client-testimonial-avater"
+          />
+          <p class="client-name">John Nexx</p>
+        </div>
+        <!-- Testimonial box 1 -->
+        <div class="testimonial-box item">
+          <p>
+            " Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Corrupti, in eius eum labore quasi, rem, itaque illo ipsum earum
+            modi necessitatibus voluptas! Voluptatum pariatur architecto
+            perspiciatis totam, ullam nam nulla, amet id fuga recusandae,
+            cupiditate quia. Dicta quas vitae nisi, ex officiis voluptas quo
+            magnam corrupti, deserunt cum, maiores tempora."
+          </p>
+          <img
+            src="/images/testimonial-avater.jpg"
+            alt="client-testimonial-avater"
+          />
+          <p class="client-name">Doe John</p>
+        </div>
+      </div>
+    </section>
+    <!-- END TESTIMONIALS -->
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section">
+      <h3>Contact <span class="orange-span">U</span>s</h3>
+      <p class="sub-p">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, ad.
+      </p>
+      <form class="contact" action="" method="post" data-aos="fade-up">
+        <p>Send Message</p>
+        <fieldset>
+          <input placeholder="Full Name" type="text" tabindex="1" required />
+        </fieldset>
+        <fieldset>
+          <input
+            placeholder="Email Address"
+            type="email"
+            tabindex="2"
+            required
+          />
+        </fieldset>
+
+        <fieldset>
+          <textarea placeholder="Your Message" tabindex="5" required></textarea>
+        </fieldset>
+        <fieldset>
+          <button
+            class="btn"
+            name="submit"
+            type="submit"
+            id="contact-submit"
+            data-submit="...Sending"
+          >
+            Submit
+          </button>
+        </fieldset>
+      </form>
+    </section>
+    <!-- END CONTACT SECTION -->
+
+    <!-- FOOTER SECTION -->
+    <footer>
+      <div class="footer">
+        <small
+          >Copyright &copy; 2021. All rights Reserved. Developed by
+          <a class="dev-link" href="#">Emmanuel</a>.</small
+        >
+        <!-- Socials -->
+        <ul>
+          <li>
+            <a href="#"
+              ><img src="./images/icon-facebook.svg" alt="facebook-icon"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./images/icon-instagram.svg" alt="instagram-icon"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./images/icon-twitter.svg" alt="icon-twitter"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <!-- END FOOTER SECTION -->
+
+    <!-- SCRIPTs -->
+
+    <!-- JQUERY -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- OWL -->
+    <script src="./OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js"></script>
+    <script src="/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+
+    <!-- AOS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+      crossorigin="anonymous"
+    ></script>
+    <!-- CUSTOM JS -->
+    <script>
+      // Toggles NavBar to stick on Scroll
+      window.addEventListener("scroll", () => {
+        const navbar = document.querySelector(".navbar");
+        navbar.classList.toggle("sticky", window.scrollY > 80);
+      });
+
+      // OWL CAROUSEL
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        responsive: { 0: { items: 1 } },
+      });
+      // ANIMATION ON SCROLL
+      AOS.init({
+        delay: 300,
+        duration: 1500,
+        once: false,
+      });
+      // BURGER MENU
+    </script>
+    <!-- END SCRIPT -->
   </body>
 </html>
