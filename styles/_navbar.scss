@@ -1,0 +1,99 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  width: 90%;
+  z-index: 10;
+  opacity: 0.9;
+  // @include responsive(425px) {
+  //   justify-content: space-between;
+  //   width: 100%;
+  // }
+  &-links {
+    display: flex;
+    justify-content: space-between;
+    @include responsive(768px) {
+      position: absolute;
+      right: 0;
+      left: 0;
+      height: 90vh;
+      top: 10vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      background-color: $light;
+      transform: translateX(120%);
+      transition: transform 0.5s ease-in;
+      z-index: 10000;
+    }
+    a {
+      //   color: $light;
+      &:hover {
+        color: $orange;
+        letter-spacing: 2px;
+        transition: 0.5s;
+      }
+    }
+  }
+}
+.logo,
+.navbar-links {
+  flex: 1;
+}
+
+.sticky {
+  background-color: $dark;
+  height: 8vh;
+  padding: 5px 30px;
+  transition: all 0.5s ease-in-out;
+  @include responsive(425px) {
+    // background-color: $dark;
+    padding: 10px;
+    margin-right: 5px;
+  }
+}
+
+.burger {
+  display: none;
+  @include responsive(768px) {
+    display: block;
+    justify-content: flex-end;
+    // padding-right: 5%;
+  }
+
+  div {
+    width: 25px;
+    height: 3px;
+    background-color: $light;
+    margin: 5px;
+    transition: all 0.3s ease;
+  }
+}
+.nav-active {
+  transform: translateX(0%);
+}
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}

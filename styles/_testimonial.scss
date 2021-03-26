@@ -1,0 +1,92 @@
+#testimonial-section {
+  background: url(/images/desktop/bg-testimonial-desktop.jpg) no-repeat center;
+  background-size: 100% 100%;
+  height: 550px;
+  max-width: 100%;
+  color: $light;
+  @include responsive(768px) {
+    background-size: cover;
+  }
+
+  .active {
+    span {
+      background: $orange;
+    }
+  }
+  .owl-dots {
+    margin-top: 10px;
+    @include responsive(1024px) {
+      margin-top: 0px;
+    }
+    &:hover {
+      transition: all 0.3s ease-in-out;
+      transform: scale(1.1);
+    }
+  }
+  .owl-nav {
+    display: none;
+    // margin-top: 10px;
+  }
+}
+
+.testimonial-box {
+  position: relative;
+  z-index: 1;
+  max-width: 80%;
+  margin: 20px auto;
+  padding: 10px 30px 0;
+  @include responsive(1024px) {
+    max-width: 90%;
+    margin: 10px auto;
+  }
+  @include responsive(768px) {
+    max-width: 100%;
+    margin: auto;
+    padding: 0 20px;
+  }
+  @include responsive(425px) {
+    padding: 0px;
+  }
+  ::before {
+    content: "";
+    background-color: $gray;
+    opacity: 0.1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    z-index: -1;
+    border-radius: 10px;
+  }
+  P {
+    color: white;
+    font-size: 14px;
+    font-style: italic;
+    padding: 10px;
+    margin-top: 10px;
+    @include responsive(425px) {
+      font-size: 12px;
+      padding: 5px;
+    }
+  }
+  img {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 80px;
+
+    border-radius: 50%;
+    padding-bottom: 10px;
+    @include responsive(425px) {
+      max-width: 60px;
+      padding-bottom: 0px;
+    }
+  }
+  .client-name {
+    color: $light;
+    font-size: 15px;
+    font-weight: 400;
+  }
+}
