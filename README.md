@@ -1,6 +1,6 @@
 # Food Landing Page Webite
 
-Built this simple Landing Page for practice purposes using HTML,SCSS and JS.
+Built this simple responsive Landing Page for practice purposes using HTML,SCSS and JS.
 
 The main idea was from [Online Tutorials Channel](https://www.youtube.com/watch?v=ac5nmWOkBEY&list=LL&index=13&t=106s)
 
