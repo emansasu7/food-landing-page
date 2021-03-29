@@ -12,4 +12,4 @@ I took the concept, made a wholesale changes to the design and added a few extra
 
 
 
-[LIVE](https://food-landing-page-website-l8zqc84cb-emansasu.vercel.app/)
+[LIVE](https://food-landing-page-website.vercel.app/)
